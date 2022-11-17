@@ -1,0 +1,31 @@
+.headerNav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    background-color: hsla(219, 57%, 51%, 0.24);
+    border-radius: 5px;
+}
+
+.headerNav__photo {
+    display: flex;
+    img {
+        border-radius: 5px;
+        padding: auto 0;
+    }
+}
+
+.headerNav__link {
+    display: flex;
+    gap: 33px;
+    a {
+        // background-color: #ffc;
+        margin: auto 0;
+        border-radius: 5px;
+        padding: 2px;
+    }
+}
+
+.active {
+    background-color: #ffc;
+}
