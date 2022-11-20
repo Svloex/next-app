@@ -34,22 +34,15 @@ ul {
 }
 
 #__next {
-    height: 101vh;
     display: grid;
-    grid-template-columns: auto;
-    .item2 {
-        height: 95vh;
-    }
-    // @media(max-height:70vh) {
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    .item2 {}
+    // @media(min-height:100vh) {
     //     .item2 {
     //         height: auto;
     //     }
     // }
-    @media(min-height:100vh) {
-        .item2 {
-            height: auto;
-        }
-    }
 }
 
 // @media (prefers-color-scheme: dark) {
