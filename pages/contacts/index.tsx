@@ -4,6 +4,7 @@ import Link from "next/link"
 import { FC } from "react"
 import { contactType } from "../../types"
 import Headeing from "../../components/Heading"
+import styles from '../../styles/Contacts.module.scss'
 
 type contactsTypeProps = {
     contacts:[contactType]
@@ -34,7 +35,7 @@ const Contacts:FC<contactsTypeProps> = ({contacts}) => {
                 <title>Contacts</title>
             </Head>
             <Headeing text='Contacts list:'/>
-            <ul>
+            <ul className={styles.contacts}>
                 {contacts && contacts.map(({id, name}) => {
                    return (
                         <li key={id}>

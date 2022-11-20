@@ -3,7 +3,7 @@ import styles from "../styles/Header.module.scss"
 import { FC } from "react"
 
 const Header:FC = () => (
-    <header className={styles.header}>
+    <header className={styles.header + ' item1'}>
         <Navbar/>
     </header>
 )

@@ -1,3 +1,15 @@
-// main {
-//     height: 80vh;
-// }
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    // overflow: hidden;
+    h1 {
+        margin-top: 15px;
+    }
+    img {
+        display: inline-block;
+        margin: 30px auto;
+        width: auto;
+        height: auto;
+    }
+}

@@ -11,16 +11,17 @@ const MyApp = ({ Component, pageProps }:AppProps) => (
         <Head>
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"/>
         </Head>
-        <main>
+        <main className='item2'>
             <Component {...pageProps }/>
-        </main>
-        <Image 
+            <Image 
             src={img}
             width={null}
             height={350}
             alt='preview'
             placeholder='blur'
+            style={{textAlign:"center"}}
         />
+        </main>
     </Layout>
 )
 

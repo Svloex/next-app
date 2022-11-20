@@ -10,8 +10,46 @@ a {
     text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
 * {
     box-sizing: border-box;
+}
+
+li {
+    list-style-type: none
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+#__next {
+    height: 101vh;
+    display: grid;
+    grid-template-columns: auto;
+    .item2 {
+        height: 95vh;
+    }
+    // @media(max-height:70vh) {
+    //     .item2 {
+    //         height: auto;
+    //     }
+    // }
+    @media(min-height:100vh) {
+        .item2 {
+            height: auto;
+        }
+    }
 }
 
 // @media (prefers-color-scheme: dark) {

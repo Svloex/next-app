@@ -30,13 +30,13 @@ export const getStaticProps = async () => {
   
 }
 const Home = ({socials}) => (
-  <div className={styles.wrapper}>
+  <>
     <Head>
       <title>Home</title>
     </Head>
-    <Headeing text='Hello'/>
-    <Socials socials={socials} />
-  </div>
+    <Headeing text='Сайт на Next.js'/>
+    {/* <Socials socials={socials} /> */}
+  </>
 )
 
 export default Home

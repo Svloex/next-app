@@ -4,6 +4,7 @@ import Link from "next/link"
 import { postsType } from "../../types"
 import Headeing from "../../components/Heading"
 import { FC } from "react"
+import styles from '../../styles/Posts.module.scss'
 
 export const getStaticProps:GetStaticProps = async () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/posts')
@@ -32,7 +33,7 @@ const Posts:FC<postsinfoProps> = ({posts}) => {
                 <title>Posts</title>
             </Head>
             <Headeing text='Posts list:'/>
-            <ul>
+            <ul className={styles.posts}>
                 {posts && posts.map(({id, title}) => {
                    return (
                         <li key={id}>
